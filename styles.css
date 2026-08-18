@@ -211,13 +211,15 @@ h1 {
 }
 
 .hero-photo {
-  margin: 0;
+  margin: 0 auto;
   position: relative;
+  width: min(20rem, 100%);
+  justify-self: end;
 }
 
 .photo-ring {
   position: absolute;
-  inset: -14px;
+  inset: -12px;
   border: 1px solid var(--red);
   animation: pulse 3.2s ease-in-out infinite;
 }
@@ -228,11 +230,12 @@ h1 {
 }
 
 .hero-photo img {
+  display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: 50% 18%;
-  filter: saturate(0.92) contrast(1.04);
+  height: auto;
+  max-height: 24rem;
+  object-fit: contain;
+  object-position: center top;
   animation: photoIn 1s ease both;
 }
 
@@ -430,7 +433,7 @@ h3 {
     min-height: 0;
   }
   .hero { gap: 1.6rem; padding-top: 1.4rem; }
-  .hero-photo { max-width: 20rem; }
+  .hero-photo { max-width: 16.5rem; justify-self: start; }
 }
 
 @media (prefers-reduced-motion: reduce) {
