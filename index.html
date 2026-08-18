@@ -9,196 +9,156 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta property="og:title" content="Nidhi Agrawal">
   <meta property="og:image" content="https://skcpda.github.io/nidhi-agrawal/assets/nidhi.jpg">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <nav>
     <div class="container nav-inner">
-      <a class="brand" href="#home"><b>Nidhi</b> <span>Agrawal</span></a>
+      <a class="brand" href="index.html"><b>Nidhi</b><span> Agrawal</span></a>
       <div class="links">
-        <a href="#home">Home</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#publications">Publications</a>
-        <a href="#research">Research</a>
-        <a href="#awards">Awards</a>
-        <a href="assets/Nidhi_Agrawal_CV.pdf">CV</a>
+        <a class="active" href="index.html">Home</a><a href="teaching.html">Teaching</a><a href="publication.html">Publications</a><a href="research-projects.html">Fellowships/Projects</a><a href="awards.html">Awards</a><a href="professional-activities.html">Professional Activities</a><a href="assets/Nidhi_Agrawal_CV.pdf" target="_blank">CV</a>
       </div>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile">☰</button>
+      <button aria-label="Open navigation" class="menu-btn" onclick="toggleMobileMenu()">☰</button>
     </div>
   </nav>
-  <div class="mobile-links" id="mobile">
+  <div class="mobile-links" id="mobileLinks">
     <div class="mobile-links-inner">
-      <a href="#home">Home</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#publications">Publications</a>
-      <a href="#research">Research</a>
-      <a href="#awards">Awards</a>
-      <a href="assets/Nidhi_Agrawal_CV.pdf">CV</a>
+      <a class="active" href="index.html">Home</a><a href="teaching.html">Teaching</a><a href="publication.html">Publications</a><a href="research-projects.html">Fellowships/Projects</a><a href="awards.html">Awards</a><a href="professional-activities.html">Professional Activities</a><a href="assets/Nidhi_Agrawal_CV.pdf" target="_blank">CV</a>
     </div>
   </div>
-
-  <main class="container" id="home">
-    <section class="intro-section">
+  <main class="container">
+    <div class="intro-section">
       <div class="bio">
         <p>
-          I am a PhD research scholar under the supervision of Prof. Shashank Gupta
-          at the Disruptive Technologies Lab, Department of Computer Science and
-          Information Systems, Birla Institute of Technology and Science, Pilani.
-          My research focuses on computer vision, cyber-physical systems, and
-          vehicle-bridge interaction modelling for long-span bridge assessment.
+          I am a PhD research scholar under the supervision of
+          <a href="https://www.bits-pilani.ac.in/pilani/shashank-gupta/" target="_blank">Prof. Shashank Gupta</a>
+          at the Disruptive Technologies Lab,
+          <a href="https://www.bits-pilani.ac.in/pilani/computer-science-information-systems/" target="_blank">Department of CSIS</a>,
+          <a href="https://www.bits-pilani.ac.in/pilani/" target="_blank">BITS Pilani, Pilani Campus</a>.
+          My research focuses on
+          <em>computer vision, cyber-physical systems, and vehicle-bridge interaction modelling</em>
+          for long-span bridge assessment.
         </p>
         <p>
-          I work on digital twins and transfer learning for structural damage
-          detection, including a BITS Cross Disciplinary Research Forum project on
-          autonomous prediction of damage scenarios in digital-twin-generated
-          populations of civil structures. I am a student member of IEEE and ACM,
-          and a reviewer for Engineering Research Express (IOP Publishing).
+          I work on digital twins and transfer learning for structural damage detection,
+          including a BITS Cross Disciplinary Research Forum project on autonomous prediction
+          of damage scenarios in digital-twin-generated populations of civil structures.
+          I am a student member of IEEE and ACM, and a reviewer for
+          <em>Engineering Research Express</em> (IOP Publishing).
         </p>
         <p>
           Before joining BITS I completed a B.Tech with Honours in Computer Science
-          and Engineering at AKTU Lucknow (CGPA 8.65), interned in AI and ML at
-          NIELIT Gorakhpur, and served as a Junior Research Fellow on the CDRF
-          digital-twin project.
+          and Engineering at
+          <a href="https://aktu.ac.in/" target="_blank">AKTU Lucknow</a>
+          (CGPA 8.65), interned in AI and ML at NIELIT Gorakhpur, and served as a
+          Junior Research Fellow on the CDRF digital-twin project.
         </p>
         <p>
           Outside the lab I write, spend time outdoors, and play volleyball.
         </p>
+        <div class="academic-icons">
+          <a href="https://scholar.google.com/citations?user=HJzKqeQAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+          <a href="https://orcid.org/0009-0005-8396-6947" target="_blank" rel="noopener noreferrer" aria-label="ORCID" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
+          <a href="https://www.linkedin.com/in/nidhi-agrawal-b269b3217/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
       </div>
-
       <aside class="profile">
         <img class="profile-photo" src="assets/nidhi.jpg" alt="Nidhi Agrawal" width="1363" height="1400">
         <h3>Nidhi Agrawal</h3>
         <p class="role">Ph.D. Research Scholar</p>
         <p class="fellowship-award">Junior Research Fellow, BITS CDRF (2024-25)</p>
-        <p class="affiliation">Disruptive Technologies Lab, CSIS, BITS Pilani</p>
         <div class="contact-info">
           <div class="contact-row">
-            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-            <span>Lab 6021, Disruptive Technologies Lab, BITS Pilani</span>
+            <i class="fa-regular fa-building" aria-hidden="true"></i>
+            <span>Disruptive Technologies Lab, BITS Pilani</span>
           </div>
           <div class="contact-row">
-            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
             <span><a href="mailto:p20240429@pilani.bits-pilani.ac.in">p20240429@pilani.bits-pilani.ac.in</a></span>
           </div>
         </div>
-        <div class="academic-icons">
-          <a href="https://scholar.google.com/citations?user=HJzKqeQAAAAJ" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-          <a href="https://www.linkedin.com/in/nidhi-agrawal-b269b3217/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://orcid.org/0009-0005-8396-6947" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a>
-          <a href="assets/Nidhi_Agrawal_CV.pdf" aria-label="CV"><i class="fa-solid fa-file-pdf"></i></a>
-        </div>
       </aside>
-    </section>
+    </div>
     <hr class="intro-divider">
 
-    <section class="content-section" id="research">
+    <section class="content-section">
       <h2>Research Interests</h2>
-      <p><strong>Primary:</strong> Vehicle-bridge interaction modelling, computer vision, cyber-physical systems.</p>
-      <p><strong>Application verticals:</strong> Structural health assessment, digital twins, intelligent transportation.</p>
-      <p><strong>Methods:</strong> Transfer learning, finite element modelling, machine learning.</p>
+      <p><b>Primary:</b> Vehicle-bridge interaction modelling, computer vision, cyber-physical systems.</p>
+      <p><b>Application Verticals:</b> Structural health assessment, digital twins, intelligent transportation.</p>
+      <p><b>Methods:</b> Transfer learning, finite element modelling, machine learning.</p>
       <div class="research-grid">
         <article class="research-card">
-          <div class="card-art art-bridge"></div>
+          <img src="assets/research-bridge.jpg" alt="Long-span suspension bridge representing vehicle-bridge interaction modelling">
           <div class="research-card-body">
             <h3>Vehicle-Bridge Interaction</h3>
-            <p>Modelling how traffic loads and long-span bridges talk to each other for assessment.</p>
+            <p>Vehicle-bridge interaction modelling · Long-span bridge assessment</p>
           </div>
         </article>
         <article class="research-card">
-          <div class="card-art art-vision"></div>
+          <img src="assets/research-vision.jpg" alt="Autonomous vehicle representing computer vision in vehicles">
           <div class="research-card-body">
             <h3>Computer Vision</h3>
-            <p>Vision in vehicles and crack/delamination-aware damage detection.</p>
+            <p>Computer vision in vehicles · Crack and delamination-aware damage detection</p>
           </div>
         </article>
         <article class="research-card">
-          <div class="card-art art-twin"></div>
+          <img src="assets/research-twin.jpg" alt="Engineering workstation representing digital twins and finite element modelling">
           <div class="research-card-body">
             <h3>Digital Twins</h3>
-            <p>Finite-element digital twins and zero-shot transfer learning for structural dynamics.</p>
+            <p>Finite-element digital twins · Zero-shot transfer learning</p>
           </div>
         </article>
         <article class="research-card">
-          <div class="card-art art-cps"></div>
+          <img src="assets/research-cps.jpg" alt="Circuit board representing cyber-physical systems">
           <div class="research-card-body">
             <h3>Cyber-Physical Systems</h3>
-            <p>Controllers that connect sensing, simulation, and civil infrastructure.</p>
+            <p>Cyber-physical systems · Sensing, simulation, and civil infrastructure</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="content-section" id="education">
+    <section class="content-section">
       <h2>Education</h2>
       <div class="education-list">
         <div class="edu">
-          <div class="deg">Ph.D.</div>
-          <div>Department of Computer Science and Engineering, Birla Institute of Technology and Science, Pilani, Rajasthan</div>
+          <div><b>Ph.D.</b></div>
+          <div>
+            Department of Computer Science and Engineering,
+            <a href="https://www.bits-pilani.ac.in/pilani/" target="_blank">Birla Institute of Technology and Science, Pilani, Rajasthan</a>
+          </div>
           <div class="yr">2024 to present</div>
         </div>
         <div class="edu">
-          <div class="deg">B.Tech.</div>
-          <div>Computer Science and Engineering with Honours, Dr. APJ Abdul Kalam Technical University, Lucknow. CGPA 8.65</div>
+          <div><b>B.Tech.</b></div>
+          <div>
+            Computer Science and Engineering with Honours,
+            <a href="https://aktu.ac.in/" target="_blank">Dr. APJ Abdul Kalam Technical University, Lucknow</a>.
+            CGPA 8.65
+          </div>
           <div class="yr">2020 to 2024</div>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="publications">
-      <h2>Publications</h2>
-      <ol class="pubs">
-        <li>
-          Nidhi Agrawal, Rehan Nath, Aashritha Lakshmi Mallampati, Keshav Goel, Shashank Gupta, Shuvendu Narayan Patel, Devendra Gokul Patil.
-          “Integrated Finite Element-Based Digital Twin Model and Zero-Shot Transfer Learning Approach for Structural Dynamics and Damage Detection.”
-          <em>Journal of Supercomputing</em>, 2025. (In press)
-        </li>
-        <li>
-          Aditi Singh, Monika Sharma, Nidhi Agrawal, Smriti Sharma, Oshin Rawlley, Shashank Gupta, Vinay Chamola.
-          “Multi-Fidelity Digital Twin-Driven Model for Crack Segmentation and Delamination-Aware Damage Detection.”
-          <em>Computers and Structures</em>, 2026. (Under review)
-        </li>
-        <li>
-          Kushi Arun Kumar, Nidhi Agrawal, Ditya Sen, Shashank Gupta.
-          “Collision-Severity-Aware Motion Planning Utilising Driving Style Recognition and Intention-Based Trajectory Prediction at Signalised Intersections.”
-          <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2026. (Communicated)
-        </li>
-        <li>
-          Nidhi Agrawal, Abhishek Bajpai, Kumkum Dubey, BDK Patro.
-          “An Effective Approach to Classify Fraud SMS Using Hybrid Machine Learning Models.”
-          <a href="https://ieeexplore.ieee.org/document/10126300"><em>IEEE I2CT</em>, 2023</a>.
-        </li>
-      </ol>
-    </section>
-
-    <section class="content-section" id="teaching">
-      <h2>Teaching</h2>
-      <div class="edu">
-        <div class="deg">TA</div>
-        <div>CS F363 Compiler Construction, Prof. Shashank Gupta</div>
-        <div class="yr">Spring 2025, 2026</div>
-      </div>
-      <div class="edu">
-        <div class="deg">TA</div>
-        <div>CS F351 Theory of Computation, Prof. Vishal Gupta</div>
-        <div class="yr">Autumn 2025</div>
-      </div>
-      <p style="margin-top:14px"><strong>Mentoring.</strong> Keshav, Rehan, Aashritha (structural health assessment, 2025); Saanvi, Deepanpreet (traffic load simulation, 2025); Arnav (vehicle-bridge interaction modelling, 2026).</p>
-    </section>
-
-    <section class="content-section" id="awards">
-      <h2>News and awards</h2>
+    <section class="content-section">
+      <h2>News</h2>
       <div class="news">
         <div class="news-item">
           <div class="news-date">2026</div>
-          <div>2nd position, poster presentation, BITS Pilani.</div>
+          <div>2nd position, poster presentation, BITS Pilani, Pilani Campus.</div>
         </div>
         <div class="news-item">
           <div class="news-date">2025</div>
-          <div>BITS Institute Fellowship. Digital twin paper in press at <em>Journal of Supercomputing</em>.</div>
+          <div>
+            Digital twin paper in press at <b>Journal of Supercomputing</b>.
+            Received the Institute Fellowship, BITS Pilani.
+          </div>
         </div>
         <div class="news-item">
           <div class="news-date">2024-25</div>
@@ -206,15 +166,18 @@
         </div>
         <div class="news-item">
           <div class="news-date">2023</div>
-          <div>Presented at IEEE I2CT, Pune, IEEE Bombay Section.</div>
+          <div>
+            Presented at
+            <a href="https://ieeexplore.ieee.org/document/10126300" target="_blank">IEEE I2CT</a>,
+            Pune, IEEE Bombay Section.
+          </div>
         </div>
       </div>
     </section>
   </main>
-
   <footer>
     <div class="container">© <span id="year">2026</span> Nidhi Agrawal</div>
   </footer>
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
