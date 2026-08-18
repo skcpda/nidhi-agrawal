@@ -2,4 +2,4 @@
 
 Academic site for Nidhi Agrawal, PhD scholar at BITS Pilani.
 
-Live: https://nidhi-agrawal.github.io/
+Live: https://786nidhiagrawal.github.io/
