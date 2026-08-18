@@ -464,4 +464,248 @@ footer {
   }
 
   .edu .yr { text-align: left; }
+
+  .course-card,
+  .pub-card {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card img,
+  .pub-card img {
+    min-height: 140px;
+    max-height: 170px;
+    height: 170px;
+  }
+
+  .mentor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.page-hero {
+  margin: 8px 0 26px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.page-kicker {
+  margin: 0 0 6px;
+  color: var(--icon-blue);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.page-hero h1 { margin: 0 0 8px; }
+
+.page-hero p {
+  margin: 0;
+  max-width: 640px;
+  color: #4b5563;
+}
+
+.course-stack,
+.pub-stack {
+  display: grid;
+  gap: 16px;
+}
+
+.course-card,
+.pub-card {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.045);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.course-card:hover,
+.pub-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.course-card img,
+.pub-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 168px;
+  object-fit: cover;
+}
+
+.course-body,
+.pub-body {
+  padding: 15px 18px 14px;
+  min-width: 0;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #eef4fb;
+  color: var(--blue);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.chip i { font-size: 11px; }
+
+.chip-muted {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.chip-ok {
+  background: #ecf8ef;
+  color: #166534;
+}
+
+.chip-wait {
+  background: #fff7ed;
+  color: #9a3412;
+}
+
+.chip-draft {
+  background: #f4f4f5;
+  color: #3f3f46;
+}
+
+.course-body h3,
+.pub-title {
+  margin: 0 0 7px;
+  color: #111;
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.pub-title a { color: #111; }
+.pub-title a:hover { color: var(--blue); text-decoration: none; }
+
+.course-body p,
+.pub-authors,
+.pub-venue {
+  margin: 0 0 10px;
+  color: #555;
+  font-size: 13.6px;
+  line-height: 1.5;
+}
+
+.pub-authors { margin-bottom: 6px; }
+.pub-venue { margin-bottom: 12px; }
+
+.link-row,
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+}
+
+.link-row a {
+  font-size: 13.4px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  border: 1px solid #d7e2ef;
+  border-radius: 6px;
+  background: #f6f9fd;
+  color: var(--blue);
+  font-size: 12.5px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+  text-decoration: none;
+}
+
+.mentor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.mentor-card {
+  padding: 16px 16px 14px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #f8fbff 0%, #fff 42%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.mentor-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #e8f1fb;
+  color: var(--icon-blue);
+  font-size: 16px;
+}
+
+.mentor-card h3 {
+  margin: 0 0 6px;
+  font-size: 15.5px;
+  font-weight: 500;
+}
+
+.mentor-card p {
+  margin: 0;
+  color: #555;
+  font-size: 13.4px;
+}
+
+.section-banner {
+  display: block;
+  width: 100%;
+  height: 168px;
+  margin: 0 0 16px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 760px) {
+  .course-card,
+  .pub-card {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card img,
+  .pub-card img {
+    min-height: 140px;
+    max-height: 170px;
+    height: 170px;
+  }
+
+  .mentor-grid {
+    grid-template-columns: 1fr;
+  }
 }
